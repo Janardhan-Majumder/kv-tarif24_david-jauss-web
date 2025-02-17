@@ -8,6 +8,7 @@
   --playground: #e8e8e8;
   --primary: #f3d527;
   --heading: #3c5267;
+  --hash: #545454;
 }
 
 @media (prefers-color-scheme: dark) {

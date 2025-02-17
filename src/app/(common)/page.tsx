@@ -1,3 +1,4 @@
+import Advertise from "@/components/Home/Advertise";
 import Header from "@/components/Home/Header";
 import WorksSection from "@/components/Home/WorksSection";
 import Image from "next/image";
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Header />
       <WorksSection />
+      <Advertise/>
     </>
   );
 }

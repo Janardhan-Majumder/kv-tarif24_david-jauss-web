@@ -26,7 +26,7 @@ const Header = () => {
         // height={1000}
         sizes="100vw"
       />
-      <Container className="space-y-10 ">
+      <Container className="space-y-10 xl:space-y-14 ">
         {/* <TextAnimation sentence={headingText} /> */}
         <h2 className="text-center text-2xl md:text-3xl lg:text-5xl leading-normal md:leading-normal lg:leading-normal font-semibold font-roboto max-w-6xl mx-auto text-white">
           FIND THE RIGHT PROVIDER TO REDUCE YOUR EXISTING HEALTH INSURANCE

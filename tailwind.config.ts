@@ -14,6 +14,7 @@ export default {
         playground: "var(--playground)",
         primary: "var(--primary)",
         heading: "var(--heading)",
+        hash: "var(--hash)",
       },
       fontFamily: {
         poppins: ["var(--poppins)", "serif"],

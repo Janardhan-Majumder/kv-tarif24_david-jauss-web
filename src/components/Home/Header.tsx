@@ -4,6 +4,7 @@ import React from "react";
 import Container from "../Container";
 import { Button, Col, Form, Grid, Input, Row, Select } from "antd";
 import Image from "next/image";
+import TextAnimation from "../ui/TextAnimation";
 const { useBreakpoint } = Grid;
 
 const Header = () => {
@@ -11,8 +12,11 @@ const Header = () => {
   const onFinish = (values: any) => {
     console.log("Form values:", values);
   };
+  console.log(screens);
+  const headingText =
+    "FIND THE RIGHT PROVIDER TO REDUCE YOUR EXISTING HEALTH INSURANCE PREMIUM WITH THE SAME BENEFITS, WITHOUT OBLIGATION";
   return (
-    <div className="relative py-10">
+    <div className="relative pb-8">
       <Image
         src="/images/header-bg.png"
         alt="hero"
@@ -23,6 +27,7 @@ const Header = () => {
         sizes="100vw"
       />
       <Container className="space-y-10 ">
+        {/* <TextAnimation sentence={headingText} /> */}
         <h2 className="text-center text-2xl md:text-3xl lg:text-5xl leading-normal md:leading-normal lg:leading-normal font-semibold font-roboto max-w-6xl mx-auto text-white">
           FIND THE RIGHT PROVIDER TO REDUCE YOUR EXISTING HEALTH INSURANCE
           PREMIUM WITH THE SAME BENEFITS, WITHOUT OBLIGATION
@@ -42,7 +47,8 @@ const Header = () => {
                 <Form.Item name="insurance" rules={[{ required: true }]}>
                   <Select
                     showSearch
-                   size="large" placeholder="Current Insurance"
+                    size="large"
+                    placeholder="Current Insurance"
                     filterOption={(input, option) =>
                       (option?.label ?? "")
                         .toLowerCase()

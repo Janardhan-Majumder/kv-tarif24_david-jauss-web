@@ -28,7 +28,7 @@ export default function Footer() {
             // }}
             className="max-w-[200px] xl:max-w-[240px] mx-auto lg:mx-0 lg:-ml-2"
           />
-          <p className="font-normal max-w-xs md:max-w-lg mt-4">
+          <p className="font-normal max-w-xs md:max-w-lg mt-4 text-center lg:text-start">
             KV-tarif24 helps private health insurance policyholders reduce their
             premiums without switching providers or losing benefits.
             Transparent, secure, and risk-free—start saving today!

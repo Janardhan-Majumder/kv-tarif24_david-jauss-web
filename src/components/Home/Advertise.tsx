@@ -1,8 +1,9 @@
 import React from "react";
 import Container from "../Container";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-const Advertise = () => {
+const Advertise = ({ className }: { className?: string }) => {
   const advertiseItems = [
     {
       title: "Free & Non-Binding",
@@ -32,13 +33,13 @@ const Advertise = () => {
   ];
   return (
     <Container
-      parentClass=""
+      parentClass={cn("", className)}
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-between "
     >
       {advertiseItems.map((item, index: number) => (
         <div
           key={index}
-          className="flex flex-col items-center gap-4 max-w-[95%]"
+          className="flex flex-col items-center gap-4 max-w-[95%] mx-auto"
         >
           <Image
             alt="advertise"

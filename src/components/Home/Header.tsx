@@ -1,20 +1,29 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Container from "../Container";
-import { Button, Col, Form, Grid, Input, Row, Select } from "antd";
+import { Button, Col, Form, Grid, Input, Modal, Row, Select } from "antd";
 import Image from "next/image";
 import TextAnimation from "../ui/TextAnimation";
+import { useRouter } from "next/navigation";
 const { useBreakpoint } = Grid;
 
 const Header = () => {
   const screens = useBreakpoint();
+  const router = useRouter()
+  const [notOptimizable, setNotOptimizable] = useState(false);
   const onFinish = (values: any) => {
-    console.log("Form values:", values);
+    // console.log("Form values:", values);
+    if (values.title) {
+      router.push("optimizable")
+    } else {
+      setNotOptimizable(true);
+    }
   };
-  console.log(screens);
-  const headingText =
-    "FIND THE RIGHT PROVIDER TO REDUCE YOUR EXISTING HEALTH INSURANCE PREMIUM WITH THE SAME BENEFITS, WITHOUT OBLIGATION";
+  const handleClose = () => setNotOptimizable(false);
+  // console.log(screens);
+  // const headingText =
+  //   "FIND THE RIGHT PROVIDER TO REDUCE YOUR EXISTING HEALTH INSURANCE PREMIUM WITH THE SAME BENEFITS, WITHOUT OBLIGATION";
   return (
     <div className="relative pb-8">
       <Image
@@ -129,6 +138,51 @@ const Header = () => {
           </Form>
         </div>
       </Container>
+      <Modal
+        title={
+          <h1 className="w-full text-center text-2xl lg:text-4xl mt-3 text-heading">
+            Thank you for your request.
+          </h1>
+        }
+        centered
+        open={notOptimizable}
+        // onOk={() => setOpen(false)}
+        // onCancel={() => setNotOptimizable(false)}
+        // onClose={handleClose}
+        footer={null}
+        closeIcon={null}
+        style={{
+          maxWidth: "900px",
+        }}
+      width={"90%"}
+      >
+        <div className="text-center space-y-4 lg:px-10 pt-7 pb-5">
+          <p className="text-xl md:text-2xl font-medium">
+            Unfortunately, you are already in the most cost-effective plan for
+            you, and optimization is not possible in your case.
+          </p>
+          <p className="text-2xl md:text-2xl font-medium text-hash">
+            Nevertheless, we appreciate your time and wish you all the best.
+          </p>
+          <p>
+            <span className="text-hash">Your</span>
+            <br />
+            <span className="text-lg md:text-xl font-medium">
+              kv-tarif24 Team
+            </span>
+          </p>
+          <div className="flex justify-center pt-5">
+            <Button
+              type="primary"
+              size="large"
+              className="w-full max-w-xs lg:max-w-md"
+              onClick={() => setNotOptimizable(false)}
+            >
+              OK
+            </Button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

@@ -28,6 +28,7 @@ export const mainTheme: ThemeConfig = {
     Button: {
       primaryColor: "#3C5267",
       controlHeightLG: 52,
+      fontWeight: 500,
       // defaultHoverBg: "#00000",
       // defaultHoverColor: "#FFFFFF",
       // defaultActiveBg: "#65000b",

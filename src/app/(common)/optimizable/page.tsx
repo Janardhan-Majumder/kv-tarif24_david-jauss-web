@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
 import Advertise from "@/components/Home/Advertise";
+import NavigateButton from "@/components/ui/NavigateButton";
 import { Button } from "antd";
 import Image from "next/image";
 import React from "react";
@@ -51,6 +52,7 @@ const page = () => {
           </p>
         </Container>
       </div>
+
       <Container parentClass="py-5" className="space-y-4">
         <h3 className="text-center text-3xl sm:text-4xl font-semibold text-heading pt-2">
           Take the Next Step
@@ -80,16 +82,14 @@ const page = () => {
           ))}
         </div>
         <div className="flex justify-center pt-8">
-          <Button
-            type="primary"
-            size="large"
-            className="w-full max-w-xs lg:max-w-md"
-            // onClick={() => setNotOptimizable(false)}
-          >
-            START OPTIMIZATION
-          </Button>
+          <NavigateButton
+            forword="/optimization"
+            label="START OPTIMIZATION"
+            className="max-w-xs lg:max-w-md"
+          />
         </div>
       </Container>
+      <div className="bg-[#78C6C8] h-3 lg:h-4 w-full" />
       <Advertise className="bg-playground" />
     </>
   );

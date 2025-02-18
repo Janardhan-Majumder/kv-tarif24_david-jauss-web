@@ -57,8 +57,9 @@ export const mainTheme: ThemeConfig = {
       // activeBorderColor: "#1F2852",
     },
     DatePicker: {
-      // colorBorder: "#61D0FF",
-      // colorTextPlaceholder: "black",
+      controlHeightLG: 52,
+      borderRadiusLG: 2,
+      colorTextPlaceholder: "#3C5267",
     },
     // InputPassword: {
     //   controlHeightLG: 56,

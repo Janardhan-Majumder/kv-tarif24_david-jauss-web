@@ -10,12 +10,12 @@ const { useBreakpoint } = Grid;
 
 const Header = () => {
   const screens = useBreakpoint();
-  const router = useRouter()
+  const router = useRouter();
   const [notOptimizable, setNotOptimizable] = useState(false);
   const onFinish = (values: any) => {
     // console.log("Form values:", values);
     if (values.title) {
-      router.push("optimizable")
+      router.push("optimizable");
     } else {
       setNotOptimizable(true);
     }
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className="relative pb-8">
       <Image
-        src="/images/header-bg.png"
+        src="/bgs/paint-brush1.png"
         alt="hero"
         className=" absolute -z-10 object-cover object-center"
         fill
@@ -154,7 +154,7 @@ const Header = () => {
         style={{
           maxWidth: "900px",
         }}
-      width={"90%"}
+        width={"90%"}
       >
         <div className="text-center space-y-4 lg:px-10 pt-7 pb-5">
           <p className="text-xl md:text-2xl font-medium">

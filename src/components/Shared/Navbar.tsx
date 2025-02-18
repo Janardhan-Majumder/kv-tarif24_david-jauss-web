@@ -14,12 +14,12 @@ const navs = [
     value: "/",
   },
   {
-    label: "About",
-    value: "about",
+    label: "About Us",
+    value: "/about",
   },
   {
     label: "FAQ",
-    value: "faq",
+    value: "/faq",
   },
 ];
 const Navbar = () => {

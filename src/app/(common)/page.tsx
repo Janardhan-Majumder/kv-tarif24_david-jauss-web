@@ -1,4 +1,5 @@
 import Advertise from "@/components/Home/Advertise";
+import CommitmentSection from "@/components/Home/CommitmentSection";
 import DetailsSection from "@/components/Home/DetailsSection";
 import Header from "@/components/Home/Header";
 import PartnerSection from "@/components/Home/PartnerSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <Advertise />
       <DetailsSection />
       <PartnerSection />
+      <CommitmentSection/>
     </>
   );
 }

@@ -8,7 +8,7 @@ const DetailsSection = () => {
       parentClass="bg-playground py-10"
       className="flex flex-col md:flex-row-reverse items-center md:items-start justify-center gap-10 xl:gap-14"
     >
-      <div className="w-full max-w-sm xl:max-w-md">
+      <div className="w-full max-w-xs sm:max-w-sm xl:max-w-md">
         <Image
           alt="oldest"
           src={"/images/oldest-man.png"}

@@ -39,12 +39,18 @@ const Header = () => {
           <Form layout="vertical" onFinish={onFinish} style={{ marginTop: 20 }}>
             <Row gutter={[28, 16]}>
               <Col xs={24} md={12}>
-                <Form.Item name="title" rules={[{ required: true }]}>
+                <Form.Item
+                  name="title"
+                  // rules={[{ required: true }]}
+                >
                   <Input size={"large"} placeholder="Title" />
                 </Form.Item>
               </Col>
               <Col xs={24} md={12}>
-                <Form.Item name="insurance" rules={[{ required: true }]}>
+                <Form.Item
+                  name="insurance"
+                  // rules={[{ required: true }]}
+                >
                   <Select
                     showSearch
                     size="large"
@@ -66,12 +72,18 @@ const Header = () => {
               <Col xs={24} md={12}>
                 <Row gutter={[16, 16]}>
                   <Col xs={12}>
-                    <Form.Item name="firstName" rules={[{ required: true }]}>
+                    <Form.Item
+                      name="firstName"
+                      // rules={[{ required: true }]}
+                    >
                       <Input size="large" placeholder="First Name" />
                     </Form.Item>
                   </Col>
                   <Col xs={12}>
-                    <Form.Item name="lastName" rules={[{ required: true }]}>
+                    <Form.Item
+                      name="lastName"
+                      // rules={[{ required: true }]}
+                    >
                       <Input size="large" placeholder="Last Name" />
                     </Form.Item>
                   </Col>

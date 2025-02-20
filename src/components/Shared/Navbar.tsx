@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="shadow sticky top-0 left-0 w-full bg-white z-10">
+      <div className="shadow sticky top-0 left-0 w-full bg-white z-20">
         <div className="container mx-auto px-2 sm:px-4 lg:px-6 2xl:px-2 py-3 lg:py-2 flex justify-between items-center gap-3">
           <div className="overflow-hidden">
             <img

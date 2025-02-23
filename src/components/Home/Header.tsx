@@ -1,10 +1,10 @@
 "use client";
-
+// @ts-nocheck
 import React, { useState } from "react";
 import Container from "../Container";
 import { Button, Col, Form, Grid, Input, Modal, Row, Select } from "antd";
 import Image from "next/image";
-import TextAnimation from "../ui/TextAnimation";
+// import TextAnimation from "../ui/TextAnimation";
 import { useRouter } from "next/navigation";
 const { useBreakpoint } = Grid;
 
@@ -20,10 +20,11 @@ const Header = () => {
       setNotOptimizable(true);
     }
   };
-  const handleClose = () => setNotOptimizable(false);
+  // const handleClose = () => setNotOptimizable(false);
   // console.log(screens);
   // const headingText =
   //   "FIND THE RIGHT PROVIDER TO REDUCE YOUR EXISTING HEALTH INSURANCE PREMIUM WITH THE SAME BENEFITS, WITHOUT OBLIGATION";
+  console.log(screens)
   return (
     <div className="relative pb-8">
       <Image

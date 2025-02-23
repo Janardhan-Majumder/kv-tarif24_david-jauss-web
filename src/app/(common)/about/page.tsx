@@ -60,11 +60,11 @@ const page = () => {
           <p className="">
             We take the stress out of insurance optimization. From the moment
             you submit your request, our fully digitized platform handles
-            everything—from evaluating your policy’s potential for optimization
+            everything—from evaluating your policy&apos;s potential for optimization
             to delivering personalized offers and guiding you through the
-            process. Here's how we make it simple:
+            process. Heres how we make it simple:
             <br /> <br />
-            Free Consultation: Submit your details, and we’ll evaluate your
+            Free Consultation: Submit your details, and we&apos;ll evaluate your
             insurance tariff for free.
             <br />
             <br />
@@ -72,7 +72,7 @@ const page = () => {
             by our trusted partners.
             <br />
             <br />
-            Effortless Process: Accept the offer, and we’ll take care of the
+            Effortless Process: Accept the offer, and we&apos;ll take care of the
             rest, ensuring your savings are implemented quickly and efficiently.
           </p>
           <div className="pt-10">

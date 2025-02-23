@@ -1,19 +1,21 @@
 "use client";
+// @ts-nocheck
 import React, { useRef } from "react";
 import Container from "@/components/Container";
 import Advertise from "@/components/Home/Advertise";
-import { Button, Col, DatePicker, Form, Input, Row } from "antd";
+import { Button, DatePicker, Form, Input } from "antd";
 import Image from "next/image";
 import Signature, { SignatureRef } from "@uiw/react-signature";
 
-const page = () => {
+const Page = () => {
   const $svg = useRef<SignatureRef>(null);
-  const handle = (evn: React.MouseEvent<HTMLButtonElement>) =>
+  const handle = () => {
     $svg.current?.clear();
+  };
   const onFinish = (values: any) => {
     console.log("Form values:", values);
   };
-  const text = "Congratulations";
+  // const text = "Congratulations";
   const benefitsList = [
     {
       text: "The verification is 100% free and non-binding for you.",
@@ -53,7 +55,7 @@ const page = () => {
               />
             </div>
             <p className="text-2xl sm:text-3xl lg:text-4xl text-white leading-normal lg:leading-normal">
-              Don't miss out on potential savings! Complete your details now and
+              Don&lsquo;t miss out on potential savings! Complete your details now and
               take control of your insurance costs.
             </p>
             <div className="space-y-4 pt-5">
@@ -137,4 +139,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

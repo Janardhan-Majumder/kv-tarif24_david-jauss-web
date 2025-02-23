@@ -20,7 +20,7 @@ const page = () => {
         </h1>
       </div>
       <Container>
-        <div className="max-w-5xl mx-auto p-6 lg:mt-5">
+        <div className="max-w-5xl mx-auto lg:p-6 lg:mt-5">
           <p className="mb-1">
             At Paired, your privacy is a top priority. This Privacy Policy
             describes how we collect, use, disclose, and safeguard your personal
@@ -115,7 +115,7 @@ const page = () => {
             processing of your data. Contact us at [Insert Email Address].
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">8. Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold mt-6">8. Children&lsquo;s Privacy</h2>
           <p>
             Our services are intended for users aged 18 and above. We do not
             knowingly collect personal information from children under 18.

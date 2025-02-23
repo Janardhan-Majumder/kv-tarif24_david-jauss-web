@@ -37,7 +37,7 @@ const CommitmentSection = () => {
           <SectionHeading text="Our Commitment" className="text-start" />
           <p>
             At KV-tarif24.de, we are committed to providing exceptional service
-            that puts your needs first. Whether you're looking to save on your
+            that puts your needs first. Whether you&lsquo;re looking to save on your
             premiums or better understand your insurance options, we are here to
             guide you every step of the way.
           </p>

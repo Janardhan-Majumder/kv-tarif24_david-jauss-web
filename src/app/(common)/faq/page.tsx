@@ -5,7 +5,7 @@ import React, { createElement } from "react";
 import Container from "@/components/Container";
 import { PiMinusFill, PiPlusFill } from "react-icons/pi";
 
-const page = () => {
+const Page = () => {
   const [show, setShow] = React.useState<null | number>(1);
   const faqs = [
     {
@@ -91,4 +91,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

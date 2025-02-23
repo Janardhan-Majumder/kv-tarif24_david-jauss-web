@@ -1,6 +1,5 @@
 "use client";
 import React, { createElement, useEffect, useState } from "react";
-import Container from "../Container";
 import Link from "next/link";
 import { IoClose, IoNotifications } from "react-icons/io5";
 import { Badge, Drawer } from "antd";
@@ -36,12 +35,12 @@ const Navbar = () => {
       <div className="shadow sticky top-0 left-0 w-full bg-white z-20">
         <div className="container mx-auto px-2 sm:px-4 lg:px-6 2xl:px-2 py-3 lg:py-2 flex justify-between items-center gap-3">
           <div className="overflow-hidden">
-            <img
+            <Image
               className="max-w-[140px] md:max-w-[200px] xl:max-w-[240px] -ml-1 lg:-ml-2"
               alt="profile"
               src={"/images/derk-logo.svg"}
-              // width={1000}
-              // height={1000}
+              width={1000}
+              height={1000}
             />
           </div>
           <NavItems

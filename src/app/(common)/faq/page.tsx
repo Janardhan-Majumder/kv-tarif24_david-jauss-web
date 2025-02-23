@@ -1,9 +1,8 @@
 "use client";
-import Container from "@/components/Container";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { createElement } from "react";
-import { FaAngleDown } from "react-icons/fa";
+import Container from "@/components/Container";
 import { PiMinusFill, PiPlusFill } from "react-icons/pi";
 
 const page = () => {
@@ -53,7 +52,7 @@ const page = () => {
           sizes="100vw"
         />
       </div>
-      <Container parentClass="bg-[#EFEFEF] lg:px-8 pt-0 pb-20 relative">
+      <Container parentClass="bg-[#EFEFEF] lg:px-8 pt-0 pb-20 lg:pb-24 relative">
         <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-md space-y-8 px-[5%] pt-16 pb-20 -mt-40">
           <h2 className="text-4xl lg:text-5xl font-bold font-roboto leading-normal lg:leading-normal text-center">
             FREQUENTLY ASKED QUESTION

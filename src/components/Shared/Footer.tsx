@@ -53,7 +53,7 @@ export default function Footer() {
             <h3 className="font-semibold text-2xl">Utility Pages</h3>
             <ul className="mt-4 flex flex-col gap-3">
               <li>
-                <Link href="/policy">Privacy Policy</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </li>
               <li>
                 <Link href="/terms">Terms of Use</Link>

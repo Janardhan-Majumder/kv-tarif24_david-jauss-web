@@ -1,5 +1,6 @@
 "use client";
 import Container from "@/components/Container";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { createElement } from "react";
 import { FaAngleDown } from "react-icons/fa";
@@ -52,31 +53,39 @@ const page = () => {
           sizes="100vw"
         />
       </div>
-      <Container parentClass="bg-[#EFEFEF] pb-20" className="max-w-5xl bg-white rounded-2xl space-y-8">
-        <h2 className="text-4xl lg:text-5xl font-bold font-roboto leading-normal lg:leading-normal text-center">
-          FREQUENTLY ASKED QUESTION
-        </h2>
-        <div className="flex flex-col space-y-4 px-[5%]">
-          {faqs.map((faq, index) => (
-            <div
-              onClick={() => setShow(faq.id)}
-              key={index}
-              className="p-4 lg:px-8 lg:py-5 rounded-lg space-y-4 bg-[#E9F9F6]"
-            >
-              <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold font-poppins">
-                  {faq.question}
-                </h3>
-                <button className="text-primary">
-                  {createElement(show === faq.id ? PiMinusFill : PiPlusFill, {
-                    className: "",
-                    size: 22,
+      <Container parentClass="bg-[#EFEFEF] lg:px-8 pt-0 pb-20 relative">
+        <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-md space-y-8 px-[5%] pt-16 pb-20 -mt-40">
+          <h2 className="text-4xl lg:text-5xl font-bold font-roboto leading-normal lg:leading-normal text-center">
+            FREQUENTLY ASKED QUESTION
+          </h2>
+          <div className="flex flex-col space-y-5">
+            {faqs.map((faq, index) => (
+              <div
+                onClick={() => setShow(faq.id)}
+                key={index}
+                className="p-4 lg:px-8 lg:py-5 rounded-lg space-y-4 bg-[#E9F9F6] transition-all cursor-pointer"
+              >
+                <div className="flex justify-between items-center gap-2">
+                  <h3 className=" md:text-lg font-semibold font-poppins">
+                    {faq.question}
+                  </h3>
+                  <button className="text-primary">
+                    {createElement(show === faq.id ? PiMinusFill : PiPlusFill, {
+                      className: "",
+                      size: 22,
+                    })}
+                  </button>
+                </div>
+                <p
+                  className={cn("text-sm lg:text-base", {
+                    hidden: show !== faq.id,
                   })}
-                </button>
+                >
+                  {faq.answer}
+                </p>
               </div>
-              <p className="text-sm">{faq.answer}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </Container>
     </div>

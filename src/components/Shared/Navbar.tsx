@@ -47,12 +47,11 @@ const Navbar = () => {
             pathname={pathname}
             className="hidden lg:flex justify-center"
           />
-          <div className="flex justify-end items-center gap-3 lg:gap-5">
-            <Link
+          <div className=" flex justify-end items-center gap-3 lg:gap-5">
+            {/* <Link
               href={"profile"}
               className="bg-heading rounded-full hidden lg:block"
             >
-              {/* <Avatar alt="profile" shape="circle" icon={}/> */}
               <Image
                 className="size-10 rounded-full "
                 alt="profile"
@@ -60,7 +59,7 @@ const Navbar = () => {
                 width={200}
                 height={200}
               />
-            </Link>
+            </Link> */}
             <Link href={"notification"}>
               <Badge
                 dot={true}

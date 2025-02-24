@@ -12,7 +12,7 @@ const Container = ({
       <div
         id={id}
         className={cn(
-          "container mx-auto px-2 sm:px-4 lg:px-6 2xl:px-2 py-10 lg:py-16",
+          "container mx-auto px-2.5 sm:px-4 lg:px-6 2xl:px-2 py-10 lg:py-16",
           className
         )}
       >

@@ -120,7 +120,7 @@ const Page = () => {
               })}
             </div>
             <div className="space-y-1">
-              <p className="text-sm md:text-base text-slate-700">
+              <p className="text-sm md:text-base text-slate-700 dark:text-white/85">
                 {notification?.message}
               </p>
               <p className="text-xs sm:text-sm text-gray-500">

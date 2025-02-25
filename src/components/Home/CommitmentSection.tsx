@@ -11,7 +11,7 @@ const CommitmentSection = () => {
       className="space-y-12 lg:space-y-20"
     >
       <div className="flex flex-col-reverse md:flex-row justify-center items-center md:items-end">
-        <div className="bg-white rounded-xl pl-5 p-8 flex gap-2 max-w-xs md:max-w-md lg:max-w-xl h-fit mb-6 shadow md:-mr-44 -mt-10 md:-mt-0 z-0">
+        <div className="bg-background rounded-xl pl-5 p-8 flex gap-2 max-w-xs md:max-w-md lg:max-w-xl h-fit mb-6 shadow md:-mr-44 -mt-10 md:-mt-0 z-0">
           <RiDoubleQuotesR
             size={30}
             className="min-w-10 text-slate-400 scale-x-[-1.5]"

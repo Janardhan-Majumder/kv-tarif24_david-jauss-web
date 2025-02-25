@@ -21,7 +21,7 @@ const DetailsSection = () => {
         <h2 className="text-3xl lg:text-5xl font-semibold text-heading font-poppins leading-normal lg:leading-normal">
           Optimize Your Insurance with Ease
         </h2>
-        <p>
+        <p className="text-hash">
           Our platform is designed to help you optimize your insurance premiums
           effortlessly while maintaining all your existing benefits. With expert
           guidance, you can reduce costs without the hassle of switching

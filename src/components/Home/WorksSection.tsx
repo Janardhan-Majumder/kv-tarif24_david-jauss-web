@@ -27,19 +27,19 @@ const WorksSection = () => {
             //   }}
             className="py-6 lg:py-10 px-10 flex items-center justify-center text-center bg-primary text-xl xl:text-3xl font-medium md:-mr-3 rounded md:[clip-path:polygon(0%_0%,90%_0%,100%_50%,90%_100%,0%_100%)]"
           >
-            <p className="max-w-xs mx-auto">
+            <p className="max-w-xs mx-auto text-heading">
               Fill out the form without obligation & receive a free mandate.
             </p>
           </div>
           <div
             className="py-6 lg:py-10 px-10 flex items-center justify-center text-center bg-playground text-xl xl:text-3xl font-medium md:-mx-3 rounded md:[clip-path:polygon(90%_0%,100%_50%,90%_100%,0%_100%,10%_50%,0%_0%)]"
           >
-            <p className="max-w-xs mx-auto">
+            <p className="max-w-xs mx-auto text-heading">
               Receive an offer and discuss it with a qualified advisor.
             </p>
           </div>
           <div className="py-6 lg:py-10 px-10 flex items-center justify-center text-center bg-primary text-xl xl:text-3xl font-medium md:-ml-3 rounded md:[clip-path:polygon(100%_0,100%_50%,100%_100%,0%_100%,10%_50%,0%_0%)]">
-            <p className="max-w-xs mx-auto">
+            <p className="max-w-xs mx-auto text-heading">
               Request a reduction and save up to 35% permanently.
             </p>
           </div>
@@ -53,7 +53,7 @@ const WorksSection = () => {
             <h2 className="text-2xl lg:text-3xl font-semibold text-heading font-poppins">
               Your Advantages
             </h2>
-            <p>
+            <p className="text-hash">
               With our help, you can easily optimize your insurance and reduce
               costs without changing your provider. We analyze your current plan
               and find the best savings opportunities for you. Fast, secure, and
@@ -70,7 +70,7 @@ const WorksSection = () => {
             <h2 className="text-4xl lg:text-6xl font-semibold text-white">
               28%
             </h2>
-            <p>
+            <p className="text-hash">
               Average savings on the monthly contribution of all optimized
               customers
             </p>
@@ -84,7 +84,7 @@ const WorksSection = () => {
             <h2 className="text-4xl lg:text-6xl font-semibold text-white">
               2753
             </h2>
-            <p>Successful optimizations in the last 365 days</p>
+            <p className="text-hash">Successful optimizations in the last 365 days</p>
           </motion.div>
         </div>
       </Container>

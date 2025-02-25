@@ -53,7 +53,7 @@ const Page = () => {
         />
       </div>
       <Container parentClass="bg-[#EFEFEF] lg:px-8 pt-0 pb-20 lg:pb-24 relative">
-        <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-md space-y-8 px-[5%] pt-16 pb-20 -mt-40">
+        <div className="max-w-6xl mx-auto bg-background rounded-2xl shadow-md space-y-8 px-[5%] pt-16 pb-20 -mt-40">
           <h2 className="text-4xl lg:text-5xl font-bold font-roboto leading-normal lg:leading-normal text-center">
             FREQUENTLY ASKED QUESTION
           </h2>
@@ -65,7 +65,7 @@ const Page = () => {
                 className="p-4 lg:px-8 lg:py-5 rounded-lg space-y-4 bg-[#E9F9F6] transition-all cursor-pointer"
               >
                 <div className="flex justify-between items-center gap-2">
-                  <h3 className=" md:text-lg font-semibold font-poppins">
+                  <h3 className=" md:text-lg font-semibold font-poppins text-heading">
                     {faq.question}
                   </h3>
                   <button className="text-primary">
@@ -76,7 +76,7 @@ const Page = () => {
                   </button>
                 </div>
                 <p
-                  className={cn("text-sm lg:text-base", {
+                  className={cn("text-sm lg:text-base text-hash", {
                     hidden: show !== faq.id,
                   })}
                 >
